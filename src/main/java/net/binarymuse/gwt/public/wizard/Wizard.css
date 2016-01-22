@@ -6,7 +6,7 @@
 
 .muse-gwt-Wizard {
 	background-color: white;
-	border: 1px solid black;
+	border: 1px solid rgba(0,0,0,.3);
 }
 
 .muse-gwt-Wizard .valignMiddle {
@@ -14,19 +14,19 @@
 }
 
 .muse-gwt-Wizard .rightBorder {
-	border-right: 1px solid black;
+	border-right: 1px solid rgba(0,0,0,.3);
 }
 
 .muse-gwt-Wizard .leftBorder {
-	border-left: 1px solid black;
+	border-left: 1px solid rgba(0,0,0,.3);
 }
 
 .muse-gwt-Wizard .topBorder {
-	border-top: 1px solid black;
+	border-top: 1px solid rgba(0,0,0,.3);
 }
 
 .muse-gwt-Wizard .bottomBorder {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgba(0,0,0,.3);
 }
 
 .muse-gwt-Wizard .wizardTitle .gwt-HTML {
@@ -35,6 +35,7 @@
 
 .muse-gwt-Wizard .wizardPages {
 	padding: 5px;
+	background-color: #d0e4f6;
 }
 
 .muse-gwt-Wizard .wizardPages .inactive {

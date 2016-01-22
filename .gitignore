@@ -10,3 +10,4 @@ pages-source/static/javadoc/*
 javadoc.xml
 doc/*
 bin/*
+/target/

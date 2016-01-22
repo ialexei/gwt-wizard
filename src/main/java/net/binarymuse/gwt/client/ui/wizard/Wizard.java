@@ -142,8 +142,8 @@ public class Wizard<C extends WizardContext> extends Composite {
      * @param caption the caption for the Wizard
      * @param context the contet for the Wizard
      */
-    public Wizard(String caption, C context) {
-        this(caption, context, null);
+    public Wizard(String caption, C context, boolean showHeader) {
+        this(caption, context, showHeader, null);
     }
 
     /**
@@ -153,7 +153,7 @@ public class Wizard<C extends WizardContext> extends Composite {
      * @param context the contet for the Wizard
      * @param view the custom {@link Display} for the Wizard
      */
-    public Wizard(String caption, C context, Display view) {
+    public Wizard(String caption, C context, boolean showHeader, Display view) {
         this.context = context;
         helper = new WizardPageHelper<C>(this);
 
@@ -163,7 +163,7 @@ public class Wizard<C extends WizardContext> extends Composite {
         useLazyPageLoading = false;
 
         // initialize view now, as setCaption depends on it.
-        display = (view != null) ? view : new WizardView();
+        display = (view != null) ? view : new WizardView(showHeader);
 
         setCaption(caption);
         initUi();
