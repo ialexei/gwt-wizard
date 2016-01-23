@@ -89,7 +89,7 @@ public class WizardView extends Composite implements Display {
         this.pagePanel.setAnimationEnabled(true);
 
         // add all the panels
-        this.outerPanel.addNorth(this.titlePanel, showHeader ? 33 : 2);
+        this.outerPanel.addNorth(this.titlePanel, showHeader ? 33 : 0);
         this.outerPanel.addWest(this.pageNamePanelContainer, 165);
         this.outerPanel.addSouth(this.navigationPanel, 25);
         this.outerPanel.add(this.pagePanel);
