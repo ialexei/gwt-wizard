@@ -334,6 +334,8 @@ public class Wizard<C extends WizardContext> extends Composite {
         // Set the values of our buttons based on
         // the current page position
         adjustButtonStates();
+        
+        getCurrentPage().afterShow();
     }
 
     /**
@@ -358,6 +360,11 @@ public class Wizard<C extends WizardContext> extends Composite {
      * Show the previous page.
      */
     public void showPreviousPage() {
+    	
+    	if (getCurrentPage() != null) {
+    		getCurrentPage().beforePrevious();
+    	}
+    	
         showPage(getPreviousPageID(), false, false, true);
     }
 

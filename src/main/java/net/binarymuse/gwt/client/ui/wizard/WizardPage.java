@@ -129,4 +129,12 @@ public abstract class WizardPage<C extends WizardContext> {
      */
     public void afterNext() {}
 
+    /**
+     * Called on current page after adjusting buttons
+     */
+    public void afterShow() {}
+    /**
+     * Called before navigating to the previous page
+     */
+    public void beforePrevious() {}
 }
